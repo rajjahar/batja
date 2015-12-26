@@ -1,0 +1,19 @@
+group 'rajjahars'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'EnterPoint'
+    }
+}
+
+dependencies {
+    compile 'org.apache.poi:poi:3.9'
+
+}
